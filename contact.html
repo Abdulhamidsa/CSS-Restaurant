@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <h1>Restaurant KEA</h1>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a class="link_active" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="main_section">
+
+
+        <section class="contact_section">
+            <article>
+                <address>
+                    <p> Guldbergsgade 29N <br> 2200 Copenhagen</p>
+                    <p>Phone no:<a href="tel:+4520825370">20 82 53 70</a></p>
+                    <p>Email:<a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a></p>
+                </address>
+                <form action="submit-form.php" method="get">
+                    <fieldset>
+                        <legend>Contact form</legend>
+                        <div class="form_grouping">
+                            <label for="full-name">Full name</label>
+                            <input type="text" name="full-name" required>
+                        </div>
+                        <div class="form_grouping">
+                            <label for="phone-number">Phone no.</label>
+                            <input type="tel" name="phone-number" required>
+                        </div>
+                        <div class="form_grouping">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form_grouping">
+                            <label for="persons">Persons</label>
+                            <input type="number" name="persons" min="1" max="5" required>
+                        </div>
+                        <div class="form_grouping">
+                            <label for="date">Date and time</label>
+                            <input type="datetime-local" name="date" min="2023-08-25T08:00" max="2023-09-25T08:00"
+                                required>
+                        </div>
+                        <div class="form_grouping">
+                            <label for="message">Further information</label>
+                            <textarea name="message" cols="20" rows="3"></textarea>
+                        </div>
+                        <input type="submit" value="Send">
+                    </fieldset>
+                </form>
+            </article>
+            <div class="img_container">
+                <img src="./media/map.jpg" alt="image of a map with the resturant's location">
+            </div>
+
+        </section>
+    </main>
+</body>
+<footer>
+    <span> &copy; KEA 2023 WEB DEVELPMENT</span>
+</footer>
+
+</html>
